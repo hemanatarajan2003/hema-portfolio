@@ -1,5 +1,7 @@
 # Hema N — Software Engineer Portfolio
 
+**Live site:** https://hema-portfolio-beige.vercel.app
+
 Personal portfolio built with **Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Motion · GSAP ScrollTrigger · Lenis**.
 Fully static — no backend, no paid services. Deploys to Vercel as-is.
 
@@ -55,13 +57,16 @@ public/
   icons/  images/{profile,projects,certificates}/  resume/
 ```
 
-## Deploy to Vercel
+## Deployment
 
-1. Push this folder to a GitHub repository.
-2. On [vercel.com](https://vercel.com) → **Add New → Project** → import the repo. The framework is detected automatically, so no settings are needed.
-3. After the first deploy, put the real domain in `site.url` in `src/data/portfolio.ts` and redeploy.
+The Vercel project is connected to this GitHub repository:
 
-Or from the CLI: `npx vercel` (preview) then `npx vercel --prod`.
+- **Push to `main`** → Vercel builds and publishes to the live site automatically (about a minute).
+- **Push to any other branch** → Vercel creates a private preview deployment.
+
+Manual deploy from the CLI, if ever needed: `npx vercel --prod`.
+
+If you add a custom domain, update `site.url` in `src/data/portfolio.ts` so the sitemap and link previews use it.
 
 ## Accessibility & motion
 
